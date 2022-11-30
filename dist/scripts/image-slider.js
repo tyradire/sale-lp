@@ -13,7 +13,18 @@ const slidesEclettico = eclettico.querySelectorAll('.catalog__image');
 const slidesArchibald = archibald.querySelectorAll('.catalog__image');
 const slidesSibox = sibox.querySelectorAll('.catalog__image');
 
+const sharePopup = document.querySelector('.catalog__share-popup');
 
+const closePopupBtn = document.querySelector('.catalog__close-btn');
+
+const printAtenaBtn = atena.querySelector('.catalog__action-button_print');
+const shareAtenaBtn = atena.querySelector('.catalog__action-button_share');
+const printEcletticoBtn = eclettico.querySelector('.catalog__action-button_print');
+const shareEcletticoBtn = eclettico.querySelector('.catalog__action-button_share');
+const printArchibaldBtn = archibald.querySelector('.catalog__action-button_print');
+const shareArchibaldBtn = archibald.querySelector('.catalog__action-button_share');
+const printSiboxBtn = sibox.querySelector('.catalog__action-button_print');
+const shareSiboxBtn = sibox.querySelector('.catalog__action-button_share');
 // запоминается последний активный индикатор.
 // нужно для того, что бы при убирании курсора 
 // за слайдер, он не "гаснул".
@@ -114,3 +125,27 @@ function changeSlideSibox(section) {
       slide.classList.add('catalog__image_hidden');
   })
 }
+
+const testick = (e) => {
+  sharePopup.classList.add('catalog__share-popup_opened');
+}
+
+const closePopup = () => {
+  sharePopup.classList.remove('catalog__share-popup_opened');
+}
+
+const printTest = () => {
+  window.print();
+}
+
+shareAtenaBtn.addEventListener('click', testick);
+shareEcletticoBtn.addEventListener('click', testick);
+shareArchibaldBtn.addEventListener('click', testick);
+shareSiboxBtn.addEventListener('click', testick);
+
+printAtenaBtn.addEventListener('click', printTest);
+printEcletticoBtn.addEventListener('click', printTest);
+printArchibaldBtn.addEventListener('click', printTest);
+printSiboxBtn.addEventListener('click', printTest);
+
+closePopupBtn.addEventListener('click', closePopup)
