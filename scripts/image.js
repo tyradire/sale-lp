@@ -1,4 +1,4 @@
-import {data} from './scripts/catalog.js';
+import {data} from '../scripts/catalog.js';
 
 export default class ImageCard {
   constructor({text, dimensions, images, ids, description, price}) {
