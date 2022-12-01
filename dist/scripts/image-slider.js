@@ -168,25 +168,29 @@ const printSibox = () => {
 const shareAtena = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
   whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B9%20ATENA%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23atena'
-  vkBtn.href = 'https://vk.com/share.php?&url=https://tyradire.github.io/sale-lp/#atena'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23atena'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23atena&text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B9%20ATENA'
 }
 
 const shareEclettico = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
   whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%80%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20ECLETTICO%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23eclettico'
-  vkBtn.href = 'https://vk.com/share.php?&url=https://tyradire.github.io/sale-lp/#eclettico'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23eclettico'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23eclettico&text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%80%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20ECLETTICO'
 }
 
 const shareArchibald = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
   whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%9A%D1%80%D0%B5%D1%81%D0%BB%D0%BE%20Archibald%20%D1%81%20%D0%BF%D1%83%D1%84%D0%BE%D0%BC%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23archibald'
-  vkBtn.href = 'https://vk.com/share.php?&url=https://tyradire.github.io/sale-lp/#archibald'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23archibald'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23archibald&text=%D0%9A%D1%80%D0%B5%D1%81%D0%BB%D0%BE%20Archibald%20%D1%81%20%D0%BF%D1%83%D1%84%D0%BE%D0%BC'
 }
 
 const shareSibox = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
   whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A2%D1%83%D0%BC%D0%B1%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80%D0%B0%20%D0%BD%D0%B0%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20Sibox%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23sibox'
-  vkBtn.href = 'https://vk.com/share.php?&url=https://tyradire.github.io/sale-lp/#sibox'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23sibox'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23sibox&text=%D0%A2%D1%83%D0%BC%D0%B1%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80%D0%B0%20%D0%BD%D0%B0%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20Sibox'
 }
 
 shareAtenaBtn.addEventListener('click', shareAtena);

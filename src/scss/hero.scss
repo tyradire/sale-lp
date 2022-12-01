@@ -20,7 +20,7 @@
 
 .hero__offer {
   position: absolute;
-  bottom: 0;
+  top: 120px;
   left: 0;
   max-width: 500px;
   width: 100%;
@@ -38,7 +38,7 @@
 @media (max-width: 800px) {
   .hero__offer {
     position: absolute;
-    bottom: 0;
+    top: 220px;
     left: 0;
     max-width: 500px;
     width: 100%;
