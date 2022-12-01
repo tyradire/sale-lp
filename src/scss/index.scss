@@ -4,3 +4,55 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+@media print {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .catalog__tech {
+    width: 80%;
+  }
+  .catalog__image-wrapper {
+    width: 480px;
+    height: 480px;
+  }
+  .catalog__content, .catalog__description, .catalog__dimensions {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 300;
+    color: #1f1f1f;
+  }
+  .catalog__atena,
+  .catalog__eclettico,
+  .catalog__archibald,
+  .catalog__sibox {
+    flex-direction: column;
+    margin: 0 auto;
+    display: none;
+  }
+  .catalog__dimensions {
+    margin-top: 20px;
+  }
+  button,
+  iframe,
+  .map__wrapper,
+  .catalog__buttons,
+  .catalog__description,
+  .hero,
+  .steps,
+  .reviews,
+  .map,
+  .footer {
+    display: none;
+  }
+  .header {
+    flex-direction: row;
+  }
+  .print {
+    display: block;
+  }
+}

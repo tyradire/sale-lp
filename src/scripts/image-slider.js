@@ -33,6 +33,10 @@ let lastButtonEclettico = sectionsEclettico[0].firstElementChild;
 let lastButtonArchibald = sectionsArchibald[0].firstElementChild;
 let lastButtonSibox = sectionsSibox[0].firstElementChild;
 
+const whatsappBtn = document.querySelector('.catalog__whatsapp-link');
+const tgBtn = document.querySelector('.catalog__tg-link');
+const vkBtn = document.querySelector('.catalog__vk-link');
+
 sectionsAtena.forEach(section => {
   section.addEventListener('mouseenter', mouseEnterHandlerAtena);
   section.addEventListener('mouseleave', mouseLeaveHandlerAtena);
@@ -126,26 +130,73 @@ function changeSlideSibox(section) {
   })
 }
 
-const testick = (e) => {
-  sharePopup.classList.add('catalog__share-popup_opened');
-}
-
 const closePopup = () => {
   sharePopup.classList.remove('catalog__share-popup_opened');
 }
 
-const printTest = () => {
+const printClear = () => {
+  atena.classList.remove('print');
+  eclettico.classList.remove('print');
+  archibald.classList.remove('print');
+  sibox.classList.remove('print');
+}
+
+const printAtena = () => {
+  printClear();
+  atena.classList.add('print');
   window.print();
 }
 
-shareAtenaBtn.addEventListener('click', testick);
-shareEcletticoBtn.addEventListener('click', testick);
-shareArchibaldBtn.addEventListener('click', testick);
-shareSiboxBtn.addEventListener('click', testick);
+const printEclettico = () => {
+  printClear();
+  eclettico.classList.add('print');
+  window.print();
+}
 
-printAtenaBtn.addEventListener('click', printTest);
-printEcletticoBtn.addEventListener('click', printTest);
-printArchibaldBtn.addEventListener('click', printTest);
-printSiboxBtn.addEventListener('click', printTest);
+const printArchibald = () => {
+  printClear();
+  archibald.classList.add('print');
+  window.print();
+}
+
+const printSibox = () => {
+  printClear();
+  sibox.classList.add('print');
+  window.print();
+}
+
+const shareAtena = () => {
+  sharePopup.classList.add('catalog__share-popup_opened');
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B9%20ATENA%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23atena'
+  vkBtn.href = 'https://vk.com/share.php?&url=https://tyradire.github.io/sale-lp/#atena'
+}
+
+const shareEclettico = () => {
+  sharePopup.classList.add('catalog__share-popup_opened');
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%80%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20ECLETTICO%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23eclettico'
+  vkBtn.href = 'https://vk.com/share.php?&url=https://tyradire.github.io/sale-lp/#eclettico'
+}
+
+const shareArchibald = () => {
+  sharePopup.classList.add('catalog__share-popup_opened');
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%9A%D1%80%D0%B5%D1%81%D0%BB%D0%BE%20Archibald%20%D1%81%20%D0%BF%D1%83%D1%84%D0%BE%D0%BC%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23archibald'
+  vkBtn.href = 'https://vk.com/share.php?&url=https://tyradire.github.io/sale-lp/#archibald'
+}
+
+const shareSibox = () => {
+  sharePopup.classList.add('catalog__share-popup_opened');
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A2%D1%83%D0%BC%D0%B1%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80%D0%B0%20%D0%BD%D0%B0%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20Sibox%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23sibox'
+  vkBtn.href = 'https://vk.com/share.php?&url=https://tyradire.github.io/sale-lp/#sibox'
+}
+
+shareAtenaBtn.addEventListener('click', shareAtena);
+shareEcletticoBtn.addEventListener('click', shareEclettico);
+shareArchibaldBtn.addEventListener('click', shareArchibald);
+shareSiboxBtn.addEventListener('click', shareSibox);
+
+printAtenaBtn.addEventListener('click', printAtena);
+printEcletticoBtn.addEventListener('click', printEclettico);
+printArchibaldBtn.addEventListener('click', printArchibald);
+printSiboxBtn.addEventListener('click', printSibox);
 
 closePopupBtn.addEventListener('click', closePopup)
