@@ -14,8 +14,10 @@ const slidesArchibald = archibald.querySelectorAll('.catalog__image');
 const slidesSibox = sibox.querySelectorAll('.catalog__image');
 
 const sharePopup = document.querySelector('.catalog__share-popup');
+const orderPopup = document.querySelector('.catalog__order-popup');
 
-const closePopupBtn = document.querySelector('.catalog__close-btn');
+const closeSharePopupBtn = document.getElementById('share-close');
+const closeOrderPopupBtn = document.getElementById('order-close');
 
 const printAtenaBtn = atena.querySelector('.catalog__action-button_print');
 const shareAtenaBtn = atena.querySelector('.catalog__action-button_share');
@@ -36,6 +38,11 @@ let lastButtonSibox = sectionsSibox[0].firstElementChild;
 const whatsappBtn = document.querySelector('.catalog__whatsapp-link');
 const tgBtn = document.querySelector('.catalog__tg-link');
 const vkBtn = document.querySelector('.catalog__vk-link');
+
+const wtbAtenaBtn = document.getElementById('wtb-atena');
+const wtbEcletticoBtn = document.getElementById('wtb-eclettico');
+const wtbArchibaldBtn = document.getElementById('wtb-archibald');
+const wtbSiboxBtn = document.getElementById('wtb-sibox');
 
 sectionsAtena.forEach(section => {
   section.addEventListener('mouseenter', mouseEnterHandlerAtena);
@@ -134,6 +141,10 @@ const closePopup = () => {
   sharePopup.classList.remove('catalog__share-popup_opened');
 }
 
+const closeOrder = () => {
+  orderPopup.classList.remove('catalog__order-popup_opened');
+}
+
 const printClear = () => {
   atena.classList.remove('print');
   eclettico.classList.remove('print');
@@ -193,6 +204,10 @@ const shareSibox = () => {
   tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23sibox&text=%D0%A2%D1%83%D0%BC%D0%B1%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80%D0%B0%20%D0%BD%D0%B0%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20Sibox'
 }
 
+const openOrderPopup = () => {
+  orderPopup.classList.add('catalog__order-popup_opened');
+}
+
 shareAtenaBtn.addEventListener('click', shareAtena);
 shareEcletticoBtn.addEventListener('click', shareEclettico);
 shareArchibaldBtn.addEventListener('click', shareArchibald);
@@ -203,4 +218,10 @@ printEcletticoBtn.addEventListener('click', printEclettico);
 printArchibaldBtn.addEventListener('click', printArchibald);
 printSiboxBtn.addEventListener('click', printSibox);
 
-closePopupBtn.addEventListener('click', closePopup)
+wtbAtenaBtn.addEventListener('click', openOrderPopup);
+wtbEcletticoBtn.addEventListener('click', openOrderPopup);
+wtbArchibaldBtn.addEventListener('click', openOrderPopup);
+wtbSiboxBtn.addEventListener('click', openOrderPopup);
+
+closeSharePopupBtn.addEventListener('click', closePopup)
+closeOrderPopupBtn.addEventListener('click', closeOrder)
