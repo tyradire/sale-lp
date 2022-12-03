@@ -340,7 +340,34 @@
     height: 6px;
     margin-bottom: 8px;
   }
-  .catalog__order-wrapper {
-    
+}
+
+@media (max-width: 475px) {
+  .catalog__tech {
+    width: 340px;
+    margin-right: 0;
+    display: flex;
+  }
+  .catalog__action-buttons {
+    margin: 20px auto;
+  }
+  .catalog__image-wrapper {
+    width: 340px;
+    height: 340px;
+  }
+  .catalog__description {
+    width: 340px;
+  }
+  .catalog__section {
+    margin: 0 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .catalog__button {
+    width: 34px;
+    height: 6px;
+    margin-bottom: 8px;
   }
 }
