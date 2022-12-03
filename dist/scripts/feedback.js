@@ -1,19 +1,19 @@
-const formSubmit = document.getElementById('feedback-form');
-const buttonFeedback = document.querySelector('.feedback__button');
-const formFeedback = document.querySelector('.feedback__form');
-const closeFeedbackButton = document.querySelector('.feedback__close-btn');
+const formSubmit = document.getElementById('orderPopup-form');
+const buttonorderPopup = document.querySelector('.orderPopup__button');
+const formorderPopup = document.querySelector('.orderPopup__form');
+const closeorderPopupButton = document.querySelector('.orderPopup__close-btn');
 
-const openFeedback = () => {
-  formFeedback.classList.add('feedback_opened');
+const openorderPopup = () => {
+  formorderPopup.classList.add('orderPopup_opened');
 }
 
-const closeFeedback = (e) => {
+const closeorderPopup = (e) => {
   e.preventDefault();
-  formFeedback.classList.remove('feedback_opened');
+  formorderPopup.classList.remove('orderPopup_opened');
 }
 
-buttonFeedback.addEventListener('click', openFeedback);
-closeFeedbackButton.addEventListener('click', closeFeedback);
+buttonorderPopup.addEventListener('click', openorderPopup);
+closeorderPopupButton.addEventListener('click', closeorderPopup);
 
 formSubmit.onsubmit = function(){
   var http = new XMLHttpRequest();
@@ -25,7 +25,7 @@ formSubmit.onsubmit = function(){
       alert(http.responseText + 'Ваше сообщение получено.\nНаши специалисты ответят Вам.\nБлагодарим за интерес!');
     }
   }
-  formFeedback.classList.remove('feedback_opened');
+  formorderPopup.classList.remove('orderPopup_opened');
   http.onerror = function() {
     alert('Извините, данные не были переданы');
   }

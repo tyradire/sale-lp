@@ -68,11 +68,6 @@
       </div>
     </section>
     <button class="catalog__buy-btn" id="wtb-atena"><span>Хочу купить!</span></button>
-    <div class="catalog__order-popup">
-      <div class="catalog__order-wrapper">
-        <button class="catalog__close-btn" id="order-close">x</button>
-      </div>
-    </div>
     <section class="catalog__eclettico" id="eclettico">
       <div class="catalog__tech">
         <div>
@@ -236,5 +231,26 @@
       </div>
     </section>
     <button class="catalog__buy-btn" id="wtb-sibox"><span>Хочу купить!</span></button>
+  </div>
+  <div class="catalog__order-popup">
+    <form class="catalog__order-wrapper">
+      <div class="order-popup">
+        <form class="order-popup__form" method="POST" id="order-popup-form">
+          <h3 class="order-popup__title">Заполните заявку</h3>
+          <p class="order-popup__note">Мы свяжемся с Вами в течение 24-х часов</p>
+          <input class="order-popup__input" type="text" placeholder="Ваше имя" id="name" name="namecl" required="true" />
+          <input class="order-popup__input" type="text" placeholder="Ваш email" id="email" name="emailcl" required="true" />
+          <input class="order-popup__input" type="tel" placeholder="Ваш телефон" data-tel-input id="phone" name="phonecl" />
+          <textarea class="order-popup__text" placeholder="..." maxlength="300" id="text" name="textcl"></textarea>
+          <input class="order-popup__submit-btn" type="submit" id="form-submit"/>
+          <button class="order-popup__close-btn" id="order-close">x</button>
+        </form>
+      </div>
+      <!-- <input type="text" />
+      <input type="phone" />
+      <input type="email" />
+      <p>Хочу уточнить детали по</p>
+      <button class="catalog__close-btn" id="order-close">x</button> -->
+    </form>
   </div>
 </div>
