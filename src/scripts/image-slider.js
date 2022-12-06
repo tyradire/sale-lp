@@ -4,6 +4,7 @@ const archibald = document.querySelector('.catalog__archibald');
 const sibox = document.querySelector('.catalog__sibox');
 const infinity = document.querySelector('.catalog__infinity');
 const linda = document.querySelector('.catalog__linda');
+const ventura = document.querySelector('.catalog__ventura');
 
 const sectionsAtena = atena.querySelectorAll('.catalog__section');
 const sectionsEclettico = eclettico.querySelectorAll('.catalog__section');
@@ -11,6 +12,7 @@ const sectionsArchibald = archibald.querySelectorAll('.catalog__section');
 const sectionsSibox = sibox.querySelectorAll('.catalog__section');
 const sectionsInfinity = infinity.querySelectorAll('.catalog__section');
 const sectionsLinda = linda.querySelectorAll('.catalog__section');
+const sectionsVentura = ventura.querySelectorAll('.catalog__section');
 
 const slidesAtena = atena.querySelectorAll('.catalog__image');
 const slidesEclettico = eclettico.querySelectorAll('.catalog__image');
@@ -18,6 +20,7 @@ const slidesArchibald = archibald.querySelectorAll('.catalog__image');
 const slidesSibox = sibox.querySelectorAll('.catalog__image');
 const slidesInfinity = infinity.querySelectorAll('.catalog__image');
 const slidesLinda = linda.querySelectorAll('.catalog__image');
+const slidesVentura = ventura.querySelectorAll('.catalog__image');
 
 const sharePopup = document.querySelector('.catalog__share-popup');
 const orderPopup = document.querySelector('.catalog__order-popup');
@@ -37,6 +40,8 @@ const printInfinityBtn = infinity.querySelector('.catalog__action-button_print')
 const shareInfinityBtn = infinity.querySelector('.catalog__action-button_share');
 const printLindaBtn = linda.querySelector('.catalog__action-button_print');
 const shareLindaBtn = linda.querySelector('.catalog__action-button_share');
+const printVenturaBtn = ventura.querySelector('.catalog__action-button_print');
+const shareVenturaBtn = ventura.querySelector('.catalog__action-button_share');
 // запоминается последний активный индикатор.
 // нужно для того, что бы при убирании курсора 
 // за слайдер, он не "гаснул".
@@ -46,6 +51,7 @@ let lastButtonArchibald = sectionsArchibald[0].firstElementChild;
 let lastButtonSibox = sectionsSibox[0].firstElementChild;
 let lastButtonInfinity = sectionsInfinity[0].firstElementChild;
 let lastButtonLinda = sectionsLinda[0].firstElementChild;
+let lastButtonVentura = sectionsVentura[0].firstElementChild;
 
 const whatsappBtn = document.querySelector('.catalog__whatsapp-link');
 const tgBtn = document.querySelector('.catalog__tg-link');
@@ -57,6 +63,7 @@ const wtbArchibaldBtn = document.getElementById('wtb-archibald');
 const wtbSiboxBtn = document.getElementById('wtb-sibox');
 const wtbInfinityBtn = document.getElementById('wtb-infinity');
 const wtbLindaBtn = document.getElementById('wtb-linda');
+const wtbVenturaBtn = document.getElementById('wtb-ventura');
 
 sectionsAtena.forEach(section => {
   section.addEventListener('mouseenter', mouseEnterHandlerAtena);
@@ -81,6 +88,10 @@ sectionsInfinity.forEach(section => {
 sectionsLinda.forEach(section => {
   section.addEventListener('mouseenter', mouseEnterHandlerLinda);
   section.addEventListener('mouseleave', mouseLeaveHandlerLinda);
+})
+sectionsVentura.forEach(section => {
+  section.addEventListener('mouseenter', mouseEnterHandlerVentura);
+  section.addEventListener('mouseleave', mouseLeaveHandlerVentura);
 })
 
 function mouseEnterHandlerAtena(e) {
@@ -143,6 +154,16 @@ function mouseLeaveHandlerLinda(e) {
   lastButtonLinda = e.target.firstElementChild;
 }
 
+function mouseEnterHandlerVentura(e) {
+  lastButtonVentura.classList.remove('catalog__button_full');
+  e.target.firstElementChild.classList.add('catalog__button_full');
+  changeSlideVentura(e.target);
+}
+
+function mouseLeaveHandlerVentura(e) {
+  lastButtonVentura = e.target.firstElementChild;
+}
+
 function changeSlideAtena(section) {
   slidesAtena.forEach(slide => {
     if (section.dataset.for == slide.id)
@@ -197,6 +218,15 @@ function changeSlideLinda(section) {
   })
 }
 
+function changeSlideVentura(section) {
+  slidesVentura.forEach(slide => {
+    if (section.dataset.for == slide.id)
+      slide.classList.remove('catalog__image_hidden');
+    else
+      slide.classList.add('catalog__image_hidden');
+  })
+}
+
 const closePopup = () => {
   sharePopup.classList.remove('catalog__share-popup_opened');
 }
@@ -212,6 +242,7 @@ const printClear = () => {
   sibox.classList.remove('print');
   infinity.classList.remove('print');
   linda.classList.remove('print');
+  ventura.classList.remove('print');
 }
 
 const printAtena = () => {
@@ -247,6 +278,12 @@ const printInfinity = () => {
 const printLinda = () => {
   printClear();
   linda.classList.add('print');
+  window.print();
+}
+
+const printVentura = () => {
+  printClear();
+  ventura.classList.add('print');
   window.print();
 }
 
@@ -292,6 +329,13 @@ const shareLinda = () => {
   tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23linda&text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BA%D1%83%D1%85%D0%BD%D1%8F%20%D1%81%20%D1%84%D0%B0%D1%81%D0%B0%D0%B4%D0%B0%D0%BC%D0%B8%20Linda'
 }
 
+const shareVentura = () => {
+  sharePopup.classList.add('catalog__share-popup_opened');
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20%D0%92%D0%95%D0%9D%D0%A2%D0%A3%D0%A0%D0%90%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23ventura'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23ventura'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23ventura&text=%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20%D0%92%D0%95%D0%9D%D0%A2%D0%A3%D0%A0%D0%90'
+}
+
 const openOrderPopup = () => {
   orderPopup.classList.add('catalog__order-popup_opened');
 }
@@ -302,6 +346,7 @@ shareArchibaldBtn.addEventListener('click', shareArchibald);
 shareSiboxBtn.addEventListener('click', shareSibox);
 shareInfinityBtn.addEventListener('click', shareInfinity);
 shareLindaBtn.addEventListener('click', shareLinda);
+shareVenturaBtn.addEventListener('click', shareVentura);
 
 printAtenaBtn.addEventListener('click', printAtena);
 printEcletticoBtn.addEventListener('click', printEclettico);
@@ -309,6 +354,7 @@ printArchibaldBtn.addEventListener('click', printArchibald);
 printSiboxBtn.addEventListener('click', printSibox);
 printInfinityBtn.addEventListener('click', printInfinity);
 printLindaBtn.addEventListener('click', printLinda);
+printVenturaBtn.addEventListener('click', printVentura);
 
 wtbAtenaBtn.addEventListener('click', openOrderPopup);
 wtbEcletticoBtn.addEventListener('click', openOrderPopup);
@@ -316,6 +362,7 @@ wtbArchibaldBtn.addEventListener('click', openOrderPopup);
 wtbSiboxBtn.addEventListener('click', openOrderPopup);
 wtbInfinityBtn.addEventListener('click', openOrderPopup);
 wtbLindaBtn.addEventListener('click', openOrderPopup);
+wtbVenturaBtn.addEventListener('click', openOrderPopup);
 
 closeSharePopupBtn.addEventListener('click', closePopup)
 closeOrderPopupBtn.addEventListener('click', closeOrder)
