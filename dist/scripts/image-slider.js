@@ -289,51 +289,51 @@ const printVentura = () => {
 
 const shareAtena = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
-  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B9%20ATENA%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23atena'
-  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23atena'
-  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23atena&text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B9%20ATENA'
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B9%20ATENA%20-%20https%3A%2F%2Fsale.baushaus.ru%2F%23atena'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Fsale.baushaus.ru%2F%23atena'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Fsale.baushaus.ru%2F%23atena&text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B9%20ATENA'
 }
 
 const shareEclettico = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
-  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%80%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20ECLETTICO%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23eclettico'
-  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23eclettico'
-  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23eclettico&text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%80%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20ECLETTICO'
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%80%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20ECLETTICO%20-%20https%3A%2F%2Fsale.baushaus.ru%2F%23eclettico'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Fsale.baushaus.ru%2F%23eclettico'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Fsale.baushaus.ru%2F%23eclettico&text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%80%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20ECLETTICO'
 }
 
 const shareArchibald = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
-  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%9A%D1%80%D0%B5%D1%81%D0%BB%D0%BE%20Archibald%20%D1%81%20%D0%BF%D1%83%D1%84%D0%BE%D0%BC%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23archibald'
-  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23archibald'
-  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23archibald&text=%D0%9A%D1%80%D0%B5%D1%81%D0%BB%D0%BE%20Archibald%20%D1%81%20%D0%BF%D1%83%D1%84%D0%BE%D0%BC'
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%9A%D1%80%D0%B5%D1%81%D0%BB%D0%BE%20Archibald%20%D1%81%20%D0%BF%D1%83%D1%84%D0%BE%D0%BC%20-%20https%3A%2F%2Fsale.baushaus.ru%2F%23archibald'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Fsale.baushaus.ru%2F%23archibald'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Fsale.baushaus.ru%2F%23archibald&text=%D0%9A%D1%80%D0%B5%D1%81%D0%BB%D0%BE%20Archibald%20%D1%81%20%D0%BF%D1%83%D1%84%D0%BE%D0%BC'
 }
 
 const shareSibox = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
-  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A2%D1%83%D0%BC%D0%B1%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80%D0%B0%20%D0%BD%D0%B0%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20Sibox%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23sibox'
-  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23sibox'
-  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23sibox&text=%D0%A2%D1%83%D0%BC%D0%B1%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80%D0%B0%20%D0%BD%D0%B0%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20Sibox'
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A2%D1%83%D0%BC%D0%B1%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80%D0%B0%20%D0%BD%D0%B0%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20Sibox%20-%20https%3A%2F%2Fsale.baushaus.ru%2F%23sibox'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Fsale.baushaus.ru%2F%23sibox'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Fsale.baushaus.ru%2F%23sibox&text=%D0%A2%D1%83%D0%BC%D0%B1%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80%D0%B0%20%D0%BD%D0%B0%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20Sibox'
 }
 
 const shareInfinity = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
-  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%B8%D1%85%D0%BE%D0%B6%D0%B5%D0%B9%20Infinity%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23infinity'
-  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23infinity'
-  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23infinity&text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%B8%D1%85%D0%BE%D0%B6%D0%B5%D0%B9%20Infinity'
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%B8%D1%85%D0%BE%D0%B6%D0%B5%D0%B9%20Infinity%20-%20https%3A%2F%2Fsale.baushaus.ru%2F%23infinity'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Fsale.baushaus.ru%2F%23infinity'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Fsale.baushaus.ru%2F%23infinity&text=%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%B8%D1%85%D0%BE%D0%B6%D0%B5%D0%B9%20Infinity'
 }
 
 const shareLinda = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
-  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BA%D1%83%D1%85%D0%BD%D1%8F%20%D1%81%20%D1%84%D0%B0%D1%81%D0%B0%D0%B4%D0%B0%D0%BC%D0%B8%20Linda%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23linda'
-  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23linda'
-  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23linda&text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BA%D1%83%D1%85%D0%BD%D1%8F%20%D1%81%20%D1%84%D0%B0%D1%81%D0%B0%D0%B4%D0%B0%D0%BC%D0%B8%20Linda'
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BA%D1%83%D1%85%D0%BD%D1%8F%20%D1%81%20%D1%84%D0%B0%D1%81%D0%B0%D0%B4%D0%B0%D0%BC%D0%B8%20Linda%20-%20https%3A%2F%2Fsale.baushaus.ru%2F%23linda'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Fsale.baushaus.ru%2F%23linda'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Fsale.baushaus.ru%2F%23linda&text=%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BA%D1%83%D1%85%D0%BD%D1%8F%20%D1%81%20%D1%84%D0%B0%D1%81%D0%B0%D0%B4%D0%B0%D0%BC%D0%B8%20Linda'
 }
 
 const shareVentura = () => {
   sharePopup.classList.add('catalog__share-popup_opened');
-  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20%D0%92%D0%95%D0%9D%D0%A2%D0%A3%D0%A0%D0%90%20-%20https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23ventura'
-  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23ventura'
-  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Ftyradire.github.io%2Fsale-lp%2F%23ventura&text=%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20%D0%92%D0%95%D0%9D%D0%A2%D0%A3%D0%A0%D0%90'
+  whatsappBtn.href = 'https://api.whatsapp.com/send?text=%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20%D0%92%D0%95%D0%9D%D0%A2%D0%A3%D0%A0%D0%90%20-%20https%3A%2F%2Fsale.baushaus.ru%2F%23ventura'
+  vkBtn.href = 'https://vk.com/share.php?&url=https%3A%2F%2Fsale.baushaus.ru%2F%23ventura'
+  tgBtn.href = 'https://t.me/share/url?url=https%3A%2F%2Fsale.baushaus.ru%2F%23ventura&text=%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20%D0%92%D0%95%D0%9D%D0%A2%D0%A3%D0%A0%D0%90'
 }
 
 const openOrderPopup = () => {
